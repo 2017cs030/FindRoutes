@@ -8,6 +8,7 @@ struct node{
 };
 int main(){
 	int n;
+	printf("Enter number of citeis :\n");
 	scanf("%d",&n);
 	create_node(n);
 	
@@ -24,6 +25,7 @@ int create_node(int a){
 			x[i]->next[j]=NULL;
 		}
 	}
+	printf("Enter two cities that are connected :\n");
 	for(i=0;i<a-1;i++){
 		j=0;
 		scanf("%d %d",&s,&k);
@@ -57,7 +59,6 @@ int create_node(int a){
 				j=-1;
 			}
 }
-}
-  printf("%d",count);
+} printf("Number of routes : %d",count);
 
 }
